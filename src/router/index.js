@@ -47,6 +47,12 @@ export const constantRoutes = [
     component: () => import('@/views/register'),
     hidden: true
   },
+  
+  {
+    path: '/device/view',
+    component: () => import('@/views/device/components/view/index.vue'),
+    hidden: true
+  },
   {
     path: "/:pathMatch(.*)*",
     component: () => import('@/views/error/404'),
